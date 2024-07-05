@@ -23,10 +23,14 @@ h3,
 h4,
 h5,
 h6,
-p
- { margin: 0;
-
+p {
+  margin: 0;
 }
+
+img {
+  display: block;
+}
+
 .container {
   max-width: 1158px;
   padding: 0 15px;
@@ -44,8 +48,8 @@ p
 }
 
 .header-nav {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav-list {
@@ -67,7 +71,6 @@ align-items: center;
 .header-logo {
   padding: 24px 0;
   margin-right: 76px;
-
 }
 
 .header-logo .logo-part {
@@ -116,73 +119,71 @@ align-items: center;
 .main-hero {
   background-color: #2e2f42;
   display: flex;
-  
-  }
-  .main-hero-tytle {
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #fff;
-    max-width: 496px;
-    margin: 0 auto;
-    padding-bottom: 48px;
-    padding-top: 180px;
-    
-  }
-  .main-hero-button {
-font-family: "Roboto", sans-serif;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.04em;
-cursor: pointer;
-color: #fff;
-background-color: #4d5ae5;
-border-radius: 4px;
-display: block;
-margin: 0 auto;
-margin-bottom: 196px;
-  }
+}
+.main-hero-tytle {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  max-width: 496px;
+  margin: 0 auto;
+  padding-bottom: 48px;
+  padding-top: 180px;
+}
+.main-hero-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  color: #fff;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 196px;
+}
 
-  .main-hero-button:hover,
-  .main-hero-button:focus {
-   background-color: #404bbf;
-  }
-  /*-------------*/
+.main-hero-button:hover,
+.main-hero-button:focus {
+  background-color: #404bbf;
+}
+/*-------------*/
 
-  /*  main   */
+/*  main   */
 
-   .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.main-list {
+  display: flex;
+  gap: 24px;
+}
 
-  .main-list {
-    display: flex;
-    gap: 24px;
-  
-  } 
+.main-list-item {
+  width: calc ((100% - 24px * 3) / 4);
+}
 
- .main-list-tytle {
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-color: #2e2f42;
-margin-bottom: 8px;
-padding-top: 112px;
-width: calc( 100% - 72px ) / 4;
-
+.main-list-tytle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+  padding-top: 112px;
 }
 .main-list-text {
   font-size: 16px;
@@ -190,66 +191,84 @@ width: calc( 100% - 72px ) / 4;
   letter-spacing: 0.02em;
   color: #434455;
   padding-bottom: 120px;
-  width: calc( 100% - 72px ) / 4;
+}
+/* -----------*/
+
+/*   team   */
+.main-team {
+  background-color: #f4f4fd;
+  display: flex;
+  flex-direction: row;
 }
 
-.main-team {
-  background-color: #f4f4fd; 
-  display: flex;
-}
-.main-team-list {
-  background-color: #FFF;
-  
-}
 .main-team-tytle {
-font-weight: 700;
-font-size: 36px;
-line-height: 1.11;
-letter-spacing: 0.02em;
-text-align: center;
-text-transform: capitalize;
-color: #2e2f42;
-padding-top: 120px;
-padding-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: #2e2f42;
+  padding-top: 120px;
+  padding-bottom: 72px;
+}
+
+.main-team-list {
+  background-color: #fff;
+  border-radius: 0 0 4px 4px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+  width: calc((100% - 24px * 3) / 4);
+  padding-bottom: 120px;
 }
 
 .team-list-tytle {
-  display: flex;
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-text-align: center;
-color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  padding-bottom: 8px;
 }
 .team-list-item {
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-text-align: center;
-color: #434455;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #434455;
 }
+.content-foto {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+/*------------*/
+
+/*   portfolio   */
 .main-portfolio-tytle {
-font-weight: 700;
-font-size: 36px;
-line-height: 1.11;
-letter-spacing: 0.02em;
-text-align: center;
-text-transform: capitalize;
-color: #2e2f42;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: #2e2f42;
 }
 .portfolio-list-tytle {
   font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-color: #2e2f42;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 .portfolio-list-item {
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #434455;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 .page-footer {
   background-color: #2e2f42;
@@ -258,8 +277,8 @@ color: #434455;
   color: #f4f4fd;
 }
 .footer-text {
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #f4f4fd;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
 }
