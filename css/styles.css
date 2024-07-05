@@ -32,7 +32,7 @@ p
   padding: 0 15px;
   margin: 0 auto;
 }
-
+/* header*/
 .page-header {
   border-bottom: 1px solid #e7e9fc;
   padding-top: 24px;
@@ -99,7 +99,6 @@ align-items: center;
 
 .contacts-link {
   display: block;
- 
   padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
@@ -112,9 +111,11 @@ align-items: center;
 .contacts-link:focus {
   color: #404bbf;
 }
-
+/*----*/
+/*  hero  */
 .main-hero {
   background-color: #2e2f42;
+  display: flex;
   
   }
   .main-hero-tytle {
@@ -126,7 +127,8 @@ align-items: center;
     color: #fff;
     max-width: 496px;
     margin: 0 auto;
-    margin-bottom: 48px;
+    padding-bottom: 48px;
+    padding-top: 180px;
     
   }
   .main-hero-button {
@@ -141,30 +143,63 @@ background-color: #4d5ae5;
 border-radius: 4px;
 display: block;
 margin: 0 auto;
+margin-bottom: 196px;
   }
 
   .main-hero-button:hover,
   .main-hero-button:focus {
    background-color: #404bbf;
   }
+  /*-------------*/
+
+  /*  main   */
+
+   .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .main-list {
+    display: flex;
+    gap: 24px;
+  
+  } 
+
  .main-list-tytle {
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
+margin-bottom: 8px;
+padding-top: 112px;
+width: calc( 100% - 72px ) / 4;
+
 }
 .main-list-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-bottom: 120px;
+  width: calc( 100% - 72px ) / 4;
 }
+
 .main-team {
-  background-color: #f4f4fd; ;
+  background-color: #f4f4fd; 
+  display: flex;
 }
 .main-team-list {
   background-color: #FFF;
+  
 }
 .main-team-tytle {
 font-weight: 700;
@@ -174,8 +209,12 @@ letter-spacing: 0.02em;
 text-align: center;
 text-transform: capitalize;
 color: #2e2f42;
+padding-top: 120px;
+padding-bottom: 72px;
 }
+
 .team-list-tytle {
+  display: flex;
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
