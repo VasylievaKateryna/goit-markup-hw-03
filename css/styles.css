@@ -116,14 +116,12 @@ img {
   color: #404bbf;
 }
 /*----*/
+
 /*  hero  */
 .main-hero {
   background-color: #2e2f42;
   display: flex;
-}
-
-.main-list-tools {
-  padding: 120 0;
+  padding: 188px 0;
 }
 
 .main-hero-tytle {
@@ -136,7 +134,6 @@ img {
   max-width: 496px;
   margin: 0 auto;
   padding-bottom: 48px;
-  padding-top: 180px;
 }
 .main-hero-button {
   font-family: "Roboto", sans-serif;
@@ -153,7 +150,6 @@ img {
   min-width: 169px;
   display: block;
   margin: 0 auto;
-  margin-bottom: 196px;
 }
 
 .main-hero-button:hover,
@@ -176,10 +172,13 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.main-list-tools {
+  padding: 120px 0;
+}
+
 .main-list {
   display: flex;
   gap: 24px;
-  padding-top: 112px;
 }
 
 .main-list-item {
@@ -199,7 +198,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  padding-bottom: 120px;
 }
 /* -----------*/
 
@@ -327,7 +325,7 @@ img {
   max-width: 264px;
 }
 
-.logo .footer-logo {
+.footer-logo {
   display: inline-block;
   margin-bottom: 16px;
 }
