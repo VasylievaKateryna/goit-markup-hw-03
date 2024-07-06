@@ -170,6 +170,7 @@ img {
 .main-list {
   display: flex;
   gap: 24px;
+  padding-top: 112px;
 }
 
 .main-list-item {
@@ -183,7 +184,6 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-  padding-top: 112px;
 }
 .main-list-text {
   font-size: 16px;
@@ -265,17 +265,16 @@ img {
   padding-bottom: 72px;
 }
 .portfolio-item {
-  display: flex;
-  width: calc((100% - 24px * 2) / 3);
-  flex-wrap: wrap;
   background: #fff;
   border: 1px solid #e7e9fc;
-  row-gap: 24px;
-  column-gap: 48px;
+  width: calc((100% - 24px * 2) / 3);
 }
 
-.portfoli-list {
+.portfolio-list {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 
 .portfolio-list-tytle {
@@ -284,6 +283,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .portfolio-list-item {
   font-size: 16px;
@@ -291,6 +291,16 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
 }
+.portfolio-subtytle {
+  text-align: left;
+  padding-top: 32px;
+  padding-left: 16px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+}
+
 .page-footer {
   background-color: #2e2f42;
 }
@@ -302,4 +312,13 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
+}
+.footer-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.logo footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
