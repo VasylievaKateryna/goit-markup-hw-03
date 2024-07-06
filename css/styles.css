@@ -305,9 +305,7 @@ img {
 }
 .portfolio-subtytle {
   text-align: left;
-  padding-top: 32px;
-  padding-left: 16px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
@@ -329,7 +327,7 @@ img {
   max-width: 264px;
 }
 
-.logo footer-logo {
+.logo .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
 }
